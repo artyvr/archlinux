@@ -1,0 +1,5 @@
+nitrogen --restore &
+tint2 &
+volumeicon &
+udiskie -a -n -t &
+picom &

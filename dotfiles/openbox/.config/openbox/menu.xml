@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="https://openbox.org/" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://openbox.org/">
+  <menu id="root-menu" label="Applications">
+  <menu id="0.81963527046992" label="Accessories">
+    <item label="PCManFM"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
+    <item label="Galculator"><action name="Execute"><command><![CDATA[galculator]]></command></action></item>
+    <item label="ksnip"><action name="Execute"><command><![CDATA[ksnip]]></command></action></item>
+    <item label="Xarchiver"><action name="Execute"><command><![CDATA[xarchiver]]></command></action></item>
+  </menu>
+  <menu id="0.393344509023906" label="Виртуализация">
+    <item label="KVM"><action name="Execute"><command><![CDATA[/usr/bin/subl]]></command></action></item>
+    
+  </menu>
+  <menu id="0.883343509023206" label="Development">
+    <item label="Sublime Text"><action name="Execute"><command><![CDATA[/usr/bin/subl]]></command></action></item>
+    <item label="VS Code"><action name="Execute"><command><![CDATA[code]]></command></action></item>
+  </menu>
+  <menu id="0.725756703448621" label="Graphics">
+    <item label="Gcolor2"><action name="Execute"><command><![CDATA[gcolor2]]></command></action></item>
+    <item label="Viewnior"><action name="Execute"><command><![CDATA[viewnior]]></command></action></item>
+  </menu>
+  <menu id="0.575634875191959" label="Multimedia">
+    <item label="VLC"><action name="Execute"><command><![CDATA[vlc]]></command></action></item>
+    <item label="DeadBeef"><action name="Execute"><command><![CDATA[deadbeef]]></command></action></item>
+  </menu>
+  <menu id="0.239530179312244" label="Network">
+    <item label="Firefox"><action name="Execute"><command><![CDATA[/usr/lib/firefox/firefox]]></command></action></item>
+    <item label="Google Chrome"><action name="Execute"><command><![CDATA[/usr/bin/google-chrome-stable]]></command></action></item>
+  </menu>
+  <menu id="0.580001462003551" label="Office">
+    <item label="Zathura"><action name="Execute"><command><![CDATA[zathura]]></command></action></item>
+  </menu>
+  <menu id="0.962071295402971" label="Settings">
+    <item label="Network Configuration"><action name="Execute"><command><![CDATA[nm-connection-editor]]></command></action></item>
+    <item label="Customize Look and Feel"><action name="Execute"><command><![CDATA[lxappearance]]></command></action></item>
+    <item label="Openbox Configuration Manager"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+    <item label="Tint2 Settings"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+    <item label="Nitrogen"><action name="Execute"><command><![CDATA[nitrogen]]></command></action></item>
+  </menu>
+  <menu id="0.889645528738047" label="System">
+    <item label="GParted"><action name="Execute"><command><![CDATA[/usr/bin/gparted]]></command></action></item>
+    <item label="LXTerminal"><action name="Execute"><command><![CDATA[lxterminal]]></command></action></item>
+  </menu>
+  <separator/>
+  <menu id="0.318515353196517" label="Питание">
+    <item label="Выход"><action name="Exit"/></item>
+    <item label="Перезагрузка"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+    <item label="Выключение"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/config.pl]]></command></action></item>
+  </menu>
+</openbox_menu>
