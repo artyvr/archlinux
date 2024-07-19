@@ -1,7 +1,24 @@
-
 [Default Applications]
 text/html=google-chrome.desktop
 x-scheme-handler/http=google-chrome.desktop
 x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
+image/jpeg=viewnior.desktop
+audio/mpeg=deadbeef.desktop
+image/png=viewnior.desktop
+text/markdown=sublime_text.desktop
+text/x-python3=sublime_text.desktop
+video/webm=vlc.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/zip=xarchiver.desktop
+
+[Added Associations]
+image/jpeg=viewnior.desktop;
+audio/mpeg=deadbeef.desktop;
+image/png=viewnior.desktop;
+text/markdown=sublime_text.desktop;
+text/x-python3=sublime_text.desktop;
+video/webm=vlc.desktop;
+application/pdf=org.pwmt.zathura.desktop;
+application/zip=xarchiver.desktop;
