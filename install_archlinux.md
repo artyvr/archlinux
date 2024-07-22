@@ -24,10 +24,15 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 nano /mnt/etc/fstab 
 > UUID=.........       /                btrfs  defaults,relatime,nodatacow,space_cache,ssd,ssd_spread,compress=zstd
+
 > tmpfs /tmp tmpfs defaults,noatime,mode=1777 0 0
+
 > tmpfs /var/log tmpfs defaults,noatime,mode=0755 0 0
+
 > tmpfs /var/tmp tmpfs defaults,noatime,mode=0755 0 0
+
 > tmpfs /var/cache/pacman tmpfs defaults,noatime,mode=0755 0 0
+
 
 arch-chroot /mnt
 
