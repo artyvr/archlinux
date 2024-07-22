@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 read cpu a b c previdle rest < /proc/stat
 prevtotal=$((a+b+c+previdle))

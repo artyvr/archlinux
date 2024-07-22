@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 keyboard () {
     t=$(xset -q | grep LED)
     code=${t##*mask:  }
