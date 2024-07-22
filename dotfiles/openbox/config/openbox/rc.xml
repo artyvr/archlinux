@@ -237,6 +237,15 @@
         <command>lxterminal --command="tty-clock -c -C 7 -D" --title="~~~ Время ~~~" </command>
       </action>
     </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Power menu</name>
+        </startupnotify>
+        <command>~/.config/rofi/power_menu/power_menu.sh</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>

@@ -8,8 +8,7 @@
     <item label="Xarchiver"><action name="Execute"><command><![CDATA[xarchiver]]></command></action></item>
   </menu>
   <menu id="0.393344509023906" label="Виртуализация">
-    <item label="KVM"><action name="Execute"><command><![CDATA[/usr/bin/subl]]></command></action></item>
-    
+    <item label="KVM"><action name="Execute"><command><![CDATA[virt-manager]]></command></action></item>
   </menu>
   <menu id="0.883343509023206" label="Development">
     <item label="Sublime Text"><action name="Execute"><command><![CDATA[/usr/bin/subl]]></command></action></item>
@@ -23,7 +22,7 @@
     <item label="VLC"><action name="Execute"><command><![CDATA[vlc]]></command></action></item>
     <item label="DeadBeef"><action name="Execute"><command><![CDATA[deadbeef]]></command></action></item>
   </menu>
-  <menu id="0.239530179312244" label="Network">
+  <menu id="0.239530179312244" label="Internet">
     <item label="Firefox"><action name="Execute"><command><![CDATA[/usr/lib/firefox/firefox]]></command></action></item>
     <item label="Google Chrome"><action name="Execute"><command><![CDATA[/usr/bin/google-chrome-stable]]></command></action></item>
   </menu>
@@ -41,10 +40,14 @@
     <item label="GParted"><action name="Execute"><command><![CDATA[/usr/bin/gparted]]></command></action></item>
     <item label="LXTerminal"><action name="Execute"><command><![CDATA[lxterminal]]></command></action></item>
   </menu>
+  <menu id="0.189625528538047" label="Remote">
+    <item label="Win 10 RDP"><action name="Execute"><command><![CDATA[~/.config/openbox/scripts/windows_rdp.sh]]></command></action></item>
+    <item label="Edit Win 10 RDP"><action name="Execute"><command><![CDATA[lxterminal --command="nano ~/.config/openbox/scripts/windows_rdp.sh"]]></command></action></item>    
+  </menu>
   <separator/>
   <menu id="0.318515353196517" label="Питание">
     <item label="Выход"><action name="Exit"/></item>
-    <item label="Перезагрузка"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/schema.pl]]></command></action></item>
-    <item label="Выключение"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/config.pl]]></command></action></item>
+    <item label="Перезагрузка"><action name="Execute"><command><![CDATA[systemctl reboot]]></command></action></item>
+    <item label="Выключение"><action name="Execute"><command><![CDATA[systemctl poweroff]]></command></action></item>
   </menu>
 </openbox_menu>
