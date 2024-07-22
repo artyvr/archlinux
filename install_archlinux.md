@@ -24,13 +24,13 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 nano /mnt/etc/fstab 
 > UUID=.........       /                btrfs  defaults,relatime,nodatacow,space_cache,ssd,ssd_spread,compress=zstd
-
+>
 > tmpfs /tmp tmpfs defaults,noatime,mode=1777 0 0
-
+>
 > tmpfs /var/log tmpfs defaults,noatime,mode=0755 0 0
-
+>
 > tmpfs /var/tmp tmpfs defaults,noatime,mode=0755 0 0
-
+>
 > tmpfs /var/cache/pacman tmpfs defaults,noatime,mode=0755 0 0
 
 
@@ -41,7 +41,8 @@ ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 hwclock --systohc
 
 nano /etc/locale.gen 
-> en_US.UTF-8 
+> en_US.UTF-8
+>
 > ru_RU.UTF8
 
 locale-gen
@@ -52,7 +53,9 @@ echo namehost > /etc/hostname
 
 nano /etc/hosts
 > 127.0.0.1 localhost
+>
 > ::1 localhost
+>
 > 127.0.0.1 namehost.localdomain namehost
 
 pacman -S networkmanager btrfs-progs
@@ -122,27 +125,42 @@ nano /etc/profile
 
 nano /etc/X11/xorg.conf.d/00-keyboard.conf
 > Section "InputClass"
+>
 > Identifier "system-keyboard"
+>
 > MatchIsKeyboard "on"
+>
 > Option "XkbLayout" "us,ru"
+>
 > Option "XkbOptions" "grp:ctrl_shift_toggle"
+>
 > EndSection
 
 nano /etc/X11/xorg.conf.d/20-amdgpu.conf 
 > Section "Device"
+>
 > Identifier "AMD"
+>
 > Driver "amdgpu"
+>
 > Option "TearFree" "true"
+>
 > EndSection
 
  
 nano /etc/X11/xorg.conf.d/30-monitor.conf
 > Section "ServerFlags"
+>
 > Option "BlankTime" "0"
+>
 > Option "StandbyTime" "0"
+>
 > Option "SuspendTime" "0"
+>
 > Option "OffTime" "0"
+>
 > Option "DPMS" "Off"
+>
 > EndSection
 
 ## zsh
