@@ -1,0 +1,15 @@
+# /etc/systemd/system
+# Update repositories yay command
+
+[Unit]
+Description=Update repositories
+Requires=NetworkManager.service
+After=NetworkManager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/yay -Syy
+RemainAfterExit=yes
+
+[Install]
+WantedBy=network-online.target
