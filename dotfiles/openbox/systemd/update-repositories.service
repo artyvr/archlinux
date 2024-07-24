@@ -1,5 +1,7 @@
-# /etc/systemd/system
-# Update repositories yay command
+# Update repositories yay command service
+# copy to /etc/systemd/system
+# sudo systemctl enable update-repositories.service
+# sudo systemctl start update-repositories.service
 
 [Unit]
 Description=Update repositories
