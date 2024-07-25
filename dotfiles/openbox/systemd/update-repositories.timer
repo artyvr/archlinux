@@ -1,0 +1,15 @@
+# Update repositories yay command timer
+# copy to /etc/systemd/system
+# sudo systemctl enable update-repositories.timer
+# sudo systemctl start update-repositories.timer
+
+[Unit]
+Description="Run update-repositories.service 5min after boot and every 4 hours relative to activation time"
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=4h
+Unit=update-repositories.service
+
+[Install]
+WantedBy=update-repositories.service

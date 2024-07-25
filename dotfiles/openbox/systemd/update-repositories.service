@@ -4,7 +4,7 @@
 # sudo systemctl start update-repositories.service
 
 [Unit]
-Description=Update repositories
+Description="Update repositories yay -Syy"
 Requires=NetworkManager.service
 After=NetworkManager.service
 
