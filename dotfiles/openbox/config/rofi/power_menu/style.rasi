@@ -1,15 +1,11 @@
-/*****----- Configuration -----*****/
 configuration {
     show-icons:                 false;
 }
 
-/*****----- Global Properties -----*****/
 @import                          "~/.config/rofi/colors.rasi"
 @import                          "~/.config/rofi/fonts.rasi"
 
-/*****----- Main Window -----*****/
 window {
-    /* properties for window widget */
     transparency:                "real";
     location:                    center;
     anchor:                      center;
@@ -18,8 +14,6 @@ window {
     height:                      170px;
     x-offset:                    850px;
     y-offset:                    -400px;
-
-    /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
@@ -30,7 +24,6 @@ window {
     background-color:            @background;
 }
 
-/*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
     spacing:                     10px;
@@ -43,7 +36,6 @@ mainbox {
     children:                    [ "inputbar", "message", "listview" ];
 }
 
-/*****----- Inputbar -----*****/
 inputbar {
     enabled:                     false;
 }
@@ -54,7 +46,6 @@ prompt {
     enabled:                     false;
 }
 
-/*****----- Message -----*****/
 message {
     enabled:                     true;
     margin:                      0px;
@@ -83,7 +74,6 @@ error-message {
     text-color:                  @foreground;
 }
 
-/*****----- Listview -----*****/
 listview {
     enabled:                     true;
     columns:                     1;
@@ -107,7 +97,6 @@ listview {
     cursor:                      "default";
 }
 
-/*****----- Elements -----*****/
 element {
     enabled:                     true;
     spacing:                     0px;

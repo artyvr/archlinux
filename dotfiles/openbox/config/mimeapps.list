@@ -12,6 +12,7 @@ text/x-python3=sublime_text.desktop
 video/webm=vlc.desktop
 application/pdf=org.pwmt.zathura.desktop
 application/zip=xarchiver.desktop
+video/x-matroska=vlc.desktop
 
 [Added Associations]
 image/jpeg=viewnior.desktop;
@@ -23,3 +24,4 @@ video/webm=vlc.desktop;
 application/pdf=org.pwmt.zathura.desktop;
 application/zip=xarchiver.desktop;
 application/x-vdi-disk=xarchiver.desktop;
+video/x-matroska=vlc.desktop;
