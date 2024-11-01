@@ -1,0 +1,11 @@
+width=450
+height=350
+x=485
+y=7
+columns=2
+no_actions=true
+hide_scroll=false
+image_size=20
+prompt=search
+term=alacritty
+hide_search=false
